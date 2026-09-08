@@ -1,8 +1,8 @@
 
 var servicios = [
-    { id: 1, nombre: 'Guitarra Eléctrica', precioHora: 3000, foto: 'img/Guitarra.webp', descripcion: 'Ideal para presentaciones escolares y talleres en vivo.' },
-    { id: 2, nombre: 'Teclado', precioHora: 4000, foto: 'img/Teclado.webp', descripcion: 'Teclado versátil con soporte y pedal de sostén incluido.' },
-    { id: 3, nombre: 'bateria electronica', precioHora: 6000, foto: 'img/Bateria3.jpg', descripcion: 'Excelente calidad de sonido con volumen regulable.' }
+    { id: 1, nombre: 'Guitarra Eléctrica', precioHora: 3000, foto: 'Guitarra.webp', descripcion: 'Ideal para presentaciones escolares y talleres en vivo.' },
+    { id: 2, nombre: 'Teclado', precioHora: 4000, foto: 'Teclado.webp', descripcion: 'Teclado versátil con soporte y pedal de sostén incluido.' },
+    { id: 3, nombre: 'bateria electronica', precioHora: 6000, foto: 'Bateria3.jpg', descripcion: 'Excelente calidad de sonido con volumen regulable.' }
 ];
 
 var SEGURO_DANO_POR_UNIDAD = 2000;
