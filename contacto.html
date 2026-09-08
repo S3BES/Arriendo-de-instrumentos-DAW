@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicol Villca">
+    <meta name="description" content="Canales de contacto, mapa de ubicación física y acceso al panel administrativo para la gestión de arriendos musicales.">
+    <meta name="keywords" content="contacto arriendo instrumentos, direccion tienda musica, login administrador, soporte talleres">
+    <title>Contacto y Login - Arriendo de Instrumentos Musicales</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <header class="encabezado">
+        <h1 class="titulo-principal">Contacto y Administración</h1>
+        <nav class="navegacion">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="nosotros.html" class="nav-link">Nosotros</a>
+            <a href="servicios.html" class="nav-link">Servicios</a>
+            <a href="contacto.html" class="nav-link activo">Contacto</a>
+            <a href="finanzas.html" class="nav-link">Finanzas</a>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <div id="seccion-publica">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                
+                <section class="informacion-contacto" style="background: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #ddd;">
+                    <h2>Canales de Contacto Directo</h2>
+                    <p><strong>📍 Dirección:</strong> Av. España 1234, Santiago, Chile</p>
+                    <p><strong>📞 Teléfono:</strong> +56 9 1234 5678</p>
+                    <p><strong>✉️ Email Corporativo:</strong> contacto@arriendo-instrumentos.cl</p>
+                    <p><strong>⏰ Horario de Atención:</strong> Lunes a Viernes de 09:00 a 18:00 hrs.</p>
+                    
+                    <div style="margin-top: 15px;">
+                        <h3>Ubicación de nuestro Taller</h3>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.3142278918237!2d-70.6692655!3d-33.4541783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9692c48737c38525%3A0xb35165dc5d35d9ed!2sAv.%20Espa%C3%B1a%201234%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1700000000000" 
+                            width="100%" height="200" style="border:0; border-radius:6px;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </section>
+
+                <section class="formulario-contacto" style="background: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #ddd;">
+                    <h2>Formulario de Consultas</h2>
+                    <form id="form-contacto" novalidate>
+                        <label for="nombre">Nombre Completo:</label><br>
+                        <input type="text" id="nombre" placeholder="Ej: Juan Pérez" style="width: 100%; padding: 8px; margin-top: 4px;"><br>
+                        <p id="err-nombre" style="color: #dc3545; font-size: 13px; margin: 2px 0 10px 0; min-height: 18px;"></p>
+
+                        <label for="email">Correo Electrónico:</label><br>
+                        <input type="email" id="email" placeholder="Ej: usuario@correo.cl" style="width: 100%; padding: 8px; margin-top: 4px;"><br>
+                        <p id="err-email" style="color: #dc3545; font-size: 13px; margin: 2px 0 10px 0; min-height: 18px;"></p>
+
+                        <label for="telefono">Teléfono de Contacto:</label><br>
+                        <input type="text" id="telefono" placeholder="Ej: 912345678 (solo números)" style="width: 100%; padding: 8px; margin-top: 4px;"><br>
+                        <p id="err-telefono" style="color: #dc3545; font-size: 13px; margin: 2px 0 10px 0; min-height: 18px;"></p>
+
+                        <label for="mensaje">Mensaje o Consulta:</label><br>
+                        <textarea id="mensaje" placeholder="Escribe aquí tu consulta..." style="width: 100%; height: 80px; padding: 8px; margin-top: 4px;"></textarea><br>
+                        <p id="err-mensaje" style="color: #dc3545; font-size: 13px; margin: 2px 0 10px 0; min-height: 18px;"></p>
+
+                        <button type="submit" id="btn-enviar-contacto" style="padding: 10px 15px; background: #0d6efd; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; width: 100%;">Enviar Mensaje</button>
+                        <p id="exito-mensaje" style="color: #198754; font-weight: bold; margin-top: 10px;"></p>
+                    </form>
+                </section>
+            </div>
+            <section class="login-admin" style="max-width: 450px; margin: 0 auto 40px; background: #e9ecef; padding: 20px; border-radius: 8px; border: 1px solid #ccc;">
+                <h2>Acceso Panel de Control (Administrador)</h2>
+                <form id="form-login" novalidate>
+                    <label for="user-input">Usuario:</label><br>
+                    <input type="text" id="user-input" placeholder="Ej: 68446" style="width: 100%; padding: 8px; margin: 5px 0 10px 0;"><br>
+
+                    <label for="pass-input">Contraseña:</label><br>
+                    <input type="password" id="pass-input" placeholder="Ej: Contraseña" style="width: 100%; padding: 8px; margin: 5px 0 10px 0;"><br>
+
+                    <button type="submit" id="btn-login" style="padding: 10px; background: #212529; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; width: 100%;">Iniciar Sesión</button>
+                </form>
+                <p id="login-error" style="color: #dc3545; font-weight: bold; margin-top: 10px;"></p>
+            </section>
+        </div>
+        <section id="panel-admin" style="display: none; padding: 20px; background-color: #ffffff; border-radius: 8px; border: 1px solid #ccc; margin-top: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #0d6efd; padding-bottom: 10px; margin-bottom: 20px;">
+                <h2 style="margin: 0; color: #0d6efd;">Panel de Control Administrativo</h2>
+                <button type="button" id="btn-cerrar-sesion" style="background: #dc3545; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold;">Cerrar Sesión</button>
+            </div>
+
+            <div id="contenedor-admin-tablas"></div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Arriendo de Instrumentos Musicales - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script5.js"></script>
+</body>
+</html>

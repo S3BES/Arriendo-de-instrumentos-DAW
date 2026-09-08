@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicol Villca">
+    <meta name="description" content="Catálogo y cotización de arriendo por hora de instrumentos musicales para colegios, eventos y presentaciones.">
+    <meta name="keywords" content="arriendo instrumentos musicales, guitarras electricas arriendo, teclado santiago, musica escolar">
+    <title>Servicios - Arriendo de Instrumentos Musicales</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <header class="encabezado">
+        <h1 class="titulo-principal">Nuestros Servicios</h1>
+        <nav class="navegacion">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="nosotros.html" class="nav-link">Nosotros</a>
+            <a href="servicios.html" class="nav-link activo">Servicios</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+            <a href="finanzas.html" class="nav-link">Finanzas</a>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <section class="bienvenida">
+            <h2>Catálogo de Arriendo de Instrumentos</h2>
+            <p>Selecciona la cantidad de instrumentos y horas de arriendo. Máximo 24 horas continuas por reserva. Tiene un límite de 1 a 5 instrumentos por pedido, cualquiera que sea más se manda un mensaje al privado o se hacen varios pedidos</p>
+        </section>
+
+        <section id="contenedor-servicios" class="destacados"></section>
+
+        <div id="resultado-presupuesto" style="max-width: 700px; margin: 20px auto;"></div>
+
+        <section class="formulario-contacto" style="max-width: 800px; margin: 40px auto; background: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #ddd;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <h2 style="margin: 0;">Mis Reservas Cotizadas</h2>
+                <button type="button" id="btn-vaciar-todo" style="background-color: #dc3545; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; display: none;">Vaciar Todo</button>
+            </div>
+            
+            <div id="contenedor-mis-reservas">
+                <p style="color: #6c757d;">No tienes reservas registradas en este momento.</p>
+            </div>
+        </section>
+
+        <section class="cta-banner" style="text-align: center; margin: 40px 0; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+            <h3>¿Planeas una campaña para promocionar tu evento musical?</h3>
+            <p>Calcula el presupuesto de difusión y publicidad de tu taller en nuestra herramienta comercial.</p>
+            <a href="finanzas.html" class="btn-cta" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: #0d6efd; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">Ver Presupuesto y Finanzas</a>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Arriendo de Instrumentos Musicales - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/scrip4.js"></script>
+</body>
+</html>
