@@ -7,37 +7,37 @@ function cargarNosotros() {
             nombre: 'Juan Pérez',
             cargo: 'Encargado del Taller de Música y Sonido',
             instrumentoFavorito: 'Guitarra Eléctrica',
-            foto: 'img/Encargado de stand.jpg'
+            foto: 'Encargado de stand.jpg'
         },
         {
             nombre: 'Elena Martínez',
             cargo: 'Coordinadora de Servicios Musicales',
             instrumentoFavorito: 'Piano / Teclado',
-            foto: 'img/Coordinadora con piano.jpg'
+            foto: 'Coordinadora con piano.jpg'
         },
         {
             nombre: 'Carlos López',
             cargo: 'Experto en Arriendo de Instrumentos',
             instrumentoFavorito: 'Teclado Synthesizer',
-            foto: 'img/Teclado-persona.webp'
+            foto: 'Teclado-persona.webp'
         },
         {
             nombre: 'María González',
             cargo: 'Especialista en Logística de Eventos',
             instrumentoFavorito: 'Batería y Percusión',
-            foto: 'img/Bateria-Mujer.webp'
+            foto: 'Bateria-Mujer.webp'
         },
         {
             nombre: 'Felipe Ramírez',
             cargo: 'Productor Musical de Eventos',
             instrumentoFavorito: 'Teclado y Dirección',
-            foto: 'img/Teclado2.jpg'
+            foto: 'Teclado2.jpg'
         },
         {
             nombre: 'Junior Torres',
             cargo: 'Director de Orquesta',
             instrumentoFavorito: 'Teclado y Dirección Musical',
-            foto: 'img/Teclado3.webp'
+            foto: 'Teclado3.webp'
         }
     ];
 
